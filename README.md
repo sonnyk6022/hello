@@ -1,12 +1,16 @@
-<!DOCTYPE html>
+
+     
+        <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>반가워 심리상담소</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Gowun Dodum', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #F9F5E7;
