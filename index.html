@@ -14,10 +14,17 @@
             color: #4A4A4A;
         }
         header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             background-color: #F7D488;
             color: #4A4A4A;
             padding: 20px;
-            text-align: center;
+        }
+        header img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
         }
         nav {
             display: flex;
@@ -55,10 +62,54 @@
         .button:hover {
             background-color: #B67103;
         }
+        #qna-section {
+            display: none;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        #qna-section h2 {
+            margin-top: 0;
+        }
+        .question-list {
+            margin: 20px 0;
+        }
+        .question-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        #new-question {
+            margin-bottom: 10px;
+        }
     </style>
+    <script>
+        function toggleQnA() {
+            const qnaSection = document.getElementById('qna-section');
+            qnaSection.style.display = qnaSection.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function addQuestion() {
+            const questionInput = document.getElementById('new-question');
+            const questionList = document.getElementById('question-list');
+
+            if (questionInput.value.trim() !== '') {
+                const questionItem = document.createElement('div');
+                questionItem.className = 'question-item';
+                questionItem.innerText = questionInput.value;
+                questionList.appendChild(questionItem);
+                questionInput.value = '';
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="반가워 심리상담소 로고">
         <h1>반가워 심리상담소</h1>
         <p>마음에 반가움을 더하는 반가워, 심리상담소</p>
     </header>
@@ -68,7 +119,7 @@
         <a href="#services">상담 서비스</a>
         <a href="#blog">블로그</a>
         <a href="#reviews">이용 후기</a>
-        <a href="#contact">문의하기</a>
+        <a href="#qna" onclick="toggleQnA()">문의하기</a>
     </nav>
     <section id="intro" class="intro">
         <h2>상담소 소개</h2>
@@ -76,7 +127,7 @@
     </section>
     <section id="about" class="about">
         <h2>상담사 소개</h2>
-        <p> 전문 상담사는 다양한 경험과 따뜻한 마음으로 여러분과 함께합니다.</p>
+        <p>전문 상담사는 다양한 경험과 따뜻한 마음으로 여러분과 함께합니다.</p>
     </section>
     <section id="services" class="services">
         <h2>상담 서비스 안내</h2>
@@ -85,6 +136,8 @@
             <li>커플 상담</li>
             <li>가족 상담</li>
             <li>집단 상담</li>
+            <li>아동 상담</li>
+            <li>심리 검사</li>
         </ul>
     </section>
     <section id="blog" class="blog">
@@ -96,14 +149,16 @@
         <h2>이용 후기</h2>
         <p>우리 상담소를 방문한 분들의 이야기를 들어보세요.</p>
     </section>
-    <section id="contact" class="contact">
-        <h2>문의하기</h2>
-        <p>궁금한 점이 있으신가요? 아래 버튼을 눌러 문의해주세요.</p>
-        <a href="#" class="button">문의하기</a>
+    <section id="qna-section">
+        <h2>Q&A</h2>
+        <input type="text" id="new-question" placeholder="질문을 입력하세요..." />
+        <button onclick="addQuestion()">질문 추가</button>
+        <div id="question-list" class="question-list">
+            <!-- 질문들이 여기에 추가됩니다 -->
+        </div>
     </section>
     <footer>
         <p>&copy; 2025 반가워 심리상담소. 모든 권리 보유.</p>
     </footer>
 </body>
 </html>
-```
