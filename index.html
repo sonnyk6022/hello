@@ -1,201 +1,47 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head><!DOCTYPE html>
-<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로고 페이지</title>
-</head>
-<body>
-    <h1>웹사이트 로고</h1>
-    <img src="C:/Users/Youkyung Son/Desktop/로고확정.png" alt="로고 이미지" />
-</body>
-</html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반가워 심리상담소</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <title>이용후기</title>
     <style>
-        body {
-            font-family: 'Gowun Dodum', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F9F5E7;
-            color: #4A4A4A;
-        }
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #F7D488;
-            color: #4A4A4A;
-            padding: 20px;
-        }
-        header img {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #F9E4B7;
-            padding: 10px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #4A4A4A;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #D98E04;
-        }
-        section {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        footer {
-            background-color: #F7D488;
-            color: #4A4A4A;
-            text-align: center;
-            padding: 15px 0;
-        }
-        .button {
-            background-color: #D98E04;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background-color: #B67103;
-        }
-        #qna-section {
-            display: none;
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-        #qna-section h2 {
-            margin-top: 0;
-        }
-        .question-list {
-            margin: 20px 0;
-        }
-        .question-item {
-            margin-bottom: 15px;
-            padding: 10px;
-            background-color: #f5f5f5;
-            border-radius: 5px;
-        }
-        #new-question {
-            margin-bottom: 10px;
-        }
+        .hidden-question { color: red; font-weight: bold; }
     </style>
-    <script>
-        function toggleQnA() {
-            const qnaSection = document.getElementById('qna-section');
-            qnaSection.style.display = qnaSection.style.display === 'block' ? 'none' : 'block';
-        }
-
-        function addQuestion() {
-            const questionInput = document.getElementById('new-question');
-            const questionList = document.getElementById('question-list');
-
-            if (questionInput.value.trim() !== '') {
-                const questionItem = document.createElement('div');
-                questionItem.className = 'question-item';
-                questionItem.innerText = questionInput.value;
-                questionList.appendChild(questionItem);
-                questionInput.value = '';
-            }
-        }
-    </script>
 </head>
 <body>
-    <header>
-        <img src=""C:\Users\Youkyung Son\Desktop\로고확정.png"" alt="반가워 심리상담소 로고">
-        <h1>반가워 심리상담소</h1>
-        <p>마음에 반가움을 더하는 반가워, 심리상담소</p>
-    </header>
-    <nav>
-        <a href="#intro">상담소 소개</a>
-        <a href="#about">상담사 소개</a>
-        <a href="#services">상담 서비스</a>
-        <a href="#blog">블로그</a>
-        <a href="#reviews">이용 후기</a>
-        <a href="#qna" onclick="toggleQnA()">문의하기</a>
-    </nav>
-    <section id="intro" class="intro">
-        <h2>상담소 소개</h2>
-        <p>반가워 심리상담소는 방문 하시는 모든 분들을 반갑게 맞이하겠습니다.</p>
-    </section>
-   <section id="about" class="about">
-    <h2>상담사 소개</h2>
-    
-    <h3>손유경 소장</h3>
-    <p>전문 상담사 손유경 상담사는 풍부한 자격과 경험을 통해 다양한 분야에서 도움을 드립니다.</p>
-    <ul>
-        <li>웨스트민스터신학대학원대학교 놀이치료교육학 박사 과정 중</li>
-        <li>백석대학교 상담대학원 가족상담학 석사 졸업</li>
-        <li>강남대학교 사회복지 학사 졸업</li>
-        <li>놀이심리상담사 1급</li>
-        <li>부모교육지도사 1급</li>
-        <li>아동폭력예방상담사 1급</li>
-        <li>노인심리상담사 1급</li>
-        <li>스포츠심리상담사 1급</li>
-        <li>미술심리상담사 2급</li>
-        <li>모래놀이치료사 2급</li>
-    </ul>
+    <h1>이용후기</h1>
 
-    <h3>이소영 상담사</h3>
-    <p>전문 상담사 이소영상담사는 다양한 경험과 따뜻한 마음으로 여러분과 함께합니다.</p>
-    <ul>
-        <li>웨스트민스터신학대학원대학교 박사 과정 중</li>
-        <li>명지대학교 사회교육대학원 상담심리학 석사 졸업</li>
-        <li>임상심리사 2급</li>
-        <li>놀이심리상담사 2급</li>
-        <li>군상담심리사 2급</li>
-        <li>MMPI 검사 교육 수료</li>
-        <li>TCI 검사 교육 수료</li>
-        <li>MBTI 검사 교육 수료</li>
-    </ul>
-</section>
-        <h2>상담 서비스 안내</h2>
-        <ul>
-            <li>개인 상담</li>
-            <li>커플 상담</li>
-            <li>가족 상담</li>
-            <li>집단 상담</li>
-            <li>아동 상담</li>
-            <li>심리 검사</li>
-        </ul>
-    </section>
-    <section id="blog" class="blog">
-        <h2>블로그</h2>
-        <p>심리와 관련된 다양한 이야기를 확인해보세요.</p>
-        <a href="https://blog.naver.com/hello_counselling" target="_blank" class="button">블로그 보기</a>
-    </section>
-    <section id="reviews" class="reviews">
-        <h2>이용 후기</h2>
-        <p>우리 상담소를 방문한 분들의 이야기를 들어보세요.</p>
-    </section>
-    <section id="qna-section">
-        <h2>Q&A</h2>
-        <input type="text" id="new-question" placeholder="질문을 입력하세요..." />
-        <button onclick="addQuestion()">질문 추가</button>
-        <div id="question-list" class="question-list">
-            <!-- 질문들이 여기에 추가됩니다 -->
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 반가워 심리상담소. 모든 권리 보유.</p>
-    </footer>
+    <!-- 질문하기 양식 -->
+    <h2>질문하기</h2>
+    <form action="/submit_question" method="POST">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="question">질문 내용:</label><br>
+        <textarea id="question" name="question" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="password">비밀번호 (비밀글을 작성하려면 입력):</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="submit">질문 제출</button>
+    </form>
+
+    <!-- 대답하기 양식 -->
+    <h2>대답하기</h2>
+    <form action="/submit_answer" method="POST">
+        <label for="answer">답변 내용:</label><br>
+        <textarea id="answer" name="answer" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="question_id">질문 ID (답변할 질문 ID 입력):</label>
+        <input type="text" id="question_id" name="question_id" required><br><br>
+
+        <button type="submit">답변 제출</button>
+    </form>
+
+    <!-- 질문 제출 후 비밀글 표시 -->
+    <div class="hidden-question">
+        <p>비밀번호가 입력된 질문은 비밀글로 처리됩니다. 다른 사람은 이 질문을 볼 수 없습니다.</p>
+    </div>
+
 </body>
 </html>
