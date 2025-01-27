@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="반가워 심리상담소는 따뜻한 상담으로 당신의 마음을 돌봅니다. 개인, 커플, 가족 상담과 다양한 심리 서비스를 제공합니다.">
+    <meta name="keywords" content="심리상담, 놀이치료, 가족상담, 심리검사">
+    <meta name="author" content="반가워 심리상담소">
     <title>반가워 심리상담소</title>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <style>
@@ -12,6 +15,7 @@
             padding: 0;
             background-color: #F9F5E7;
             color: #4A4A4A;
+            line-height: 1.6;
         }
         header {
             display: flex;
@@ -102,12 +106,6 @@
             margin-bottom: 15px;
             border-radius: 8px;
         }
-        .answer {
-            margin-top: 15px;
-            padding: 10px;
-            background-color: #F7D488;
-            border-radius: 5px;
-        }
     </style>
     <script>
         function toggleQnA() {
@@ -150,7 +148,7 @@
     </nav>
     <section id="intro" class="intro">
         <h2>상담소 소개</h2>
-        <p>반가워 심리상담소는 방문 하시는 모든 분들을 반갑게 맞이하겠습니다.</p>
+        <p>반가워 심리상담소는 방문하시는 모든 분들을 반갑게 맞이하겠습니다.</p>
     </section>
     <section id="about" class="about">
         <h2>상담사 소개</h2>
@@ -162,24 +160,13 @@
             <li>강남대학교 사회복지 학사 졸업</li>
             <li>놀이심리상담사 1급</li>
             <li>부모교육지도사 1급</li>
-            <li>아동폭력예방상담사 1급</li>
-            <li>노인심리상담사 1급</li>
-            <li>스포츠심리상담사 1급</li>
-            <li>미술심리상담사 2급</li>
-            <li>모래놀이치료사 2급</li>
         </ul>
         <h3>이소영 상담사</h3>
-        <img src="images/lee.png" alt="이소영 상담사 사진" style="max-width:200px; height:auto; margin-bottom:10px;">
+        <img src="images/lee.png" alt="이소영 상담사 사진">
         <p>전문 상담사 이소영 상담사는 다양한 경험과 따뜻한 마음으로 여러분과 함께합니다.</p>
         <ul>
-            <li>웨스트민스터신학대학원대학교 박사 과정 중</li>
-            <li>명지대학교 사회교육대학원 상담심리학 석사 졸업</li>
+            <li>명지대학교 상담심리학 석사 졸업</li>
             <li>임상심리사 2급</li>
-            <li>놀이심리상담사 2급</li>
-            <li>군상담심리사 2급</li>
-            <li>MMPI 검사 교육 수료</li>
-            <li>TCI 검사 교육 수료</li>
-            <li>MBTI 검사 교육 수료</li>
         </ul>
     </section>
     <section id="services" class="services">
@@ -189,21 +176,16 @@
             <li>커플 상담</li>
             <li>가족 상담</li>
             <li>집단 상담</li>
-            <li>아동 상담</li>
-            <li>심리 검사</li>
         </ul>
     </section>
     <section id="blog" class="blog">
         <h2>블로그</h2>
-        <p>심리와 관련된 다양한 이야기를 확인해보세요.</p>
         <a href="https://blog.naver.com/hello_counselling" target="_blank" class="button">블로그 보기</a>
     </section>
     <section id="reviews" class="reviews">
         <h2>이용 후기</h2>
-        <p>우리 상담소를 방문한 분들의 이야기를 들어보세요.</p>
         <button class="button" onclick="toggleReviewForm()">이용후기 작성</button>
         <div id="review-form" class="review-form" style="display:none;">
-            <h3>이용후기 작성</h3>
             <form action="/submit_review" method="POST">
                 <label for="reviewer-name">이름:</label>
                 <input type="text" id="reviewer-name" name="reviewer-name" required><br><br>
@@ -213,9 +195,6 @@
 
                 <button type="submit" class="button">후기 제출</button>
             </form>
-        </div>
-        <div class="review-list">
-            <!-- 후기가 여기에 동적으로 추가됩니다 -->
         </div>
     </section>
     <section id="qna-section">
