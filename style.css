@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #D5BDAF;
     color: white;
     text-align: center;
     padding: 1.5rem 0;
@@ -47,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4CAF50;
+    background-color: #D5BDAF;
 }
 
 section {
@@ -60,8 +60,8 @@ section {
 }
 
 h2 {
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
+    color: #D5BDAF;
+    border-bottom: 2px solid #D5BDAF;
     padding-bottom: 0.5rem;
 }
 
@@ -78,7 +78,7 @@ li {
 button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #4CAF50;
+    background-color: #D5BDAF;
     color: white;
     border: none;
     border-radius: 5px;
@@ -88,7 +88,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #c3a596;
 }
 
 input[type="text"], textarea {
